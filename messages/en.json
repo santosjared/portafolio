@@ -1,0 +1,46 @@
+{
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "experience": "Experience",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "hero": {
+      "greeting": "Hi, I'm",
+      "role": "Full Stack Developer",
+      "description":
+        "I create accessible, high-performance digital experiences that combine elegant design with robust engineering.",
+      "actions": {
+        "about": "About me",
+        "cv": "Download CV"
+      }
+    },
+    "about": {
+      "title": "About Me",
+      "p1": "I'm a passionate developer focused on creating accessible user interfaces with attention to detail. My work centers on the intersection of design and development, creating experiences that not only look amazing but are built with performance and usability in mind.",
+      "p2": "I currently specialize in developing modern web applications using technologies like React, Next.js, TypeScript and Node.js. I love working on projects that present interesting technical challenges and opportunities to learn.",
+      "p3": "In my free time, I enjoy exploring new technologies, contributing to open source projects, and sharing knowledge with the developer community."
+    },
+    "experience": {
+      "title": "Experience",
+      "viewResume": "View full resume",
+      "present": "Present"
+    },
+    "projects": {
+      "title": "Projects",
+      "viewAll": "View full project archive"
+    },
+    "contact": {
+      "title": "Contact",
+      "subtitle": "Have a project in mind? Let's talk!",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "you@email.com",
+      "messagePlaceholder": "Your message...",
+      "send": "Send message",
+      "success": "Message sent!"
+    },
+    "footer": {
+      "copyright": "All rights reserved."
+    }
+  }

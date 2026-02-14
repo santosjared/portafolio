@@ -1,0 +1,46 @@
+  {
+    "nav": {
+      "home": "Inicio",
+      "about": "Sobre Mí",
+      "experience": "Experiencia",
+      "projects": "Proyectos",
+      "contact": "Contacto"
+    },
+    "hero": {
+      "greeting": "Hola, soy",
+      "role": "Desarrollador Full Stack",
+      "description":
+        "Creo experiencias digitales accesibles y de alto rendimiento que combinan diseño elegante con ingeniería robusta.",
+      "actions": {
+        "about": "Sobre mí",
+        "cv":"Descargar CV"
+      }
+    },
+    "about": {
+      "title": "Sobre Mí",
+      "p1": "Soy un desarrollador apasionado por crear interfaces de usuario accesibles y con atención al detalle. Mi trabajo se centra en la intersección del diseño y el desarrollo, creando experiencias que no solo lucen increíbles sino que están construidas con rendimiento y usabilidad en mente.",
+      "p2": "Actualmente me especializo en el desarrollo de aplicaciones web modernas utilizando tecnologías como React, Next.js, TypeScript y Node.js. Me encanta trabajar en proyectos que presentan desafíos técnicos interesantes y oportunidades para aprender.",
+      "p3": "En mi tiempo libre, disfruto explorando nuevas tecnologías, contribuyendo a proyectos de código abierto y compartiendo conocimientos con la comunidad de desarrolladores."
+    },
+    "experience": {
+      "title": "Experiencia",
+      "viewResume": "Ver currículum completo",
+      "present": "Presente"
+    },
+    "projects": {
+      "title": "Proyectos",
+      "viewAll": "Ver archivo completo de proyectos"
+    },
+    "contact": {
+      "title": "Contacto",
+      "subtitle": "¿Tienes un proyecto en mente? ¡Hablemos!",
+      "namePlaceholder": "Tu nombre",
+      "emailPlaceholder": "tu@email.com",
+      "messagePlaceholder": "Tu mensaje...",
+      "send": "Enviar mensaje",
+      "success": "¡Mensaje enviado!"
+    },
+    "footer": {
+      "copyright": "Todos los derechos reservados."
+    }
+  }
