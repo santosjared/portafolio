@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-// import { Menu, X } from "lucide-react";
 import { Icon } from "@iconify/react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -22,17 +21,49 @@ export function Navbar() {
 
   useEffect(() => {
     setMounted(true);
-    const handleScroll = () => setIsScrolled(window.scrollY > 10);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    const main = document.querySelector("main");
+    const handleScroll = () => {
+      if (main) setIsScrolled(main.scrollTop > 10);
+    };
+    main?.addEventListener("scroll", handleScroll);
+    return () => main?.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const sections = navIds.map((id) => document.getElementById(id));
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveId(entry.target.id);
+          }
+        });
+      },
+      {
+        threshold: 0.6,
+      }
+    );
+
+    sections.forEach((section) => {
+      if (section) observer.observe(section);
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        if (section) observer.unobserve(section);
+      });
+    };
   }, []);
 
   const handleNavClick = (id: string) => {
     const element = document.querySelector(`#${id}`);
+
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
       setActiveId(id);
     }
+
     setMobileMenuOpen(false);
   };
 
@@ -54,22 +85,22 @@ export function Navbar() {
 
         <nav className="hidden md:flex items-center gap-1">
           {navIds.map((id) => (
-          <button
-  key={id}
-  onClick={() => handleNavClick(id)}
-  className={cn(
-    "relative px-4 py-2 text-sm font-medium transition-colors duration-300",
-    "text-muted-foreground hover:text-foreground hover:cursor-pointer",
-    "after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full",
-    "after:origin-left after:scale-x-0 after:bg-blue-600",
-    "after:transition-transform after:duration-300",
-    activeId === id
-      ? "text-foreground after:scale-x-100"
-      : "hover:after:scale-x-100"
-  )}
->
-  {t(id)}
-</button>
+            <button
+              key={id}
+              onClick={() => handleNavClick(id)}
+              className={cn(
+                "relative px-4 py-2 text-sm font-medium transition-colors duration-300",
+                "text-muted-foreground hover:text-foreground hover:cursor-pointer",
+                "after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full",
+                "after:origin-left after:scale-x-0 after:bg-blue-600",
+                "after:transition-transform after:duration-300",
+                activeId === id
+                  ? "text-foreground after:scale-x-100"
+                  : "hover:after:scale-x-100"
+              )}
+            >
+              {t(id)}
+            </button>
 
           ))}
         </nav>

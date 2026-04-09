@@ -7,6 +7,7 @@
       "contact": "Contacto"
     },
     "hero": {
+      "title": "inicio",
       "greeting": "Hola, soy",
       "role": "Desarrollador Full Stack",
       "description":
@@ -19,8 +20,29 @@
     "about": {
       "title": "Sobre Mí",
       "p1": "Soy un desarrollador apasionado por crear interfaces de usuario accesibles y con atención al detalle. Mi trabajo se centra en la intersección del diseño y el desarrollo, creando experiencias que no solo lucen increíbles sino que están construidas con rendimiento y usabilidad en mente.",
-      "p2": "Actualmente me especializo en el desarrollo de aplicaciones web modernas utilizando tecnologías como React, Next.js, TypeScript y Node.js. Me encanta trabajar en proyectos que presentan desafíos técnicos interesantes y oportunidades para aprender.",
-      "p3": "En mi tiempo libre, disfruto explorando nuevas tecnologías, contribuyendo a proyectos de código abierto y compartiendo conocimientos con la comunidad de desarrolladores."
+      "p2": "Actualmente me especializo en el desarrollo de aplicaciones web modernas utilizando tecnologías como React, Next.js, TypeScript, Nest.js y Node.js. Me encanta trabajar en proyectos que presentan desafíos técnicos interesantes y oportunidades para aprender.",
+      "p3": "En mi tiempo libre, disfruto explorando nuevas tecnologías, contribuyendo a proyectos de código abierto y compartiendo conocimientos con la comunidad de desarrolladores.",
+      "card1":{
+        "title": "TOTAL DE PROYECTOS",
+        "description": "Soluciones web innovadoras"
+      },
+      "card2":{
+        "title": "CERTIFICADOS",
+        "description": "Certificados reconocidos"
+      },
+      "card3":{
+        "title": "AÑOS DE EXPERIENCIA",
+        "description": "Construyendo aplicaciones web modernas"
+      }
+    },
+    "skills": {
+      "title": "Habilidades",
+      "languages": "Lenguajes",
+      "databases": "Base de datos",
+      "frameworks": "Frameworks",
+      "tools": "Herramientas",
+      "cloud": "Nube",
+      "implementation": "Implementación"
     },
     "experience": {
       "title": "Experiencia",

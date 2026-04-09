@@ -7,6 +7,7 @@
       "contact": "Contact"
     },
     "hero": {
+      "title": "home",
       "greeting": "Hi, I'm",
       "role": "Full Stack Developer",
       "description":
@@ -19,8 +20,29 @@
     "about": {
       "title": "About Me",
       "p1": "I'm a passionate developer focused on creating accessible user interfaces with attention to detail. My work centers on the intersection of design and development, creating experiences that not only look amazing but are built with performance and usability in mind.",
-      "p2": "I currently specialize in developing modern web applications using technologies like React, Next.js, TypeScript and Node.js. I love working on projects that present interesting technical challenges and opportunities to learn.",
-      "p3": "In my free time, I enjoy exploring new technologies, contributing to open source projects, and sharing knowledge with the developer community."
+      "p2": "I currently specialize in developing modern web applications using technologies like React, Next.js, TypeScript, Nest.js and Node.js. I love working on projects that present interesting technical challenges and opportunities to learn.",
+      "p3": "In my free time, I enjoy exploring new technologies, contributing to open source projects, and sharing knowledge with the developer community.",
+      "card1":{
+        "title": "TOTAL PROJECTS",
+        "description": "Innovative web solutions"
+      },
+      "card2":{
+        "title": "CERTIFICATIONS",
+        "description": "Recognized certifications"
+      },
+      "card3":{
+        "title": "YEARS OF EXPERIENCE",
+        "description": "Building modern web applications"
+      }
+    },
+    "skills": {
+      "title": "Skills",
+      "languages": "Languages",
+      "databases": "Databases",
+      "frameworks": "Frameworks",
+      "tools": "Tools",
+      "cloud": "Cloud",
+      "implementation": "Implementation"
     },
     "experience": {
       "title": "Experience",
